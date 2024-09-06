@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Csscustomization
+Bundle-SymbolicName: de.bxservice.csscustomization;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Import-Package: org.osgi.service.component.annotations;version="1.5.1",
+ org.zkoss.zk.ui.util;version="9.6.4"
+Require-Bundle: org.adempiere.base;bundle-version="11.0.0",
+ org.adempiere.plugin.utils;bundle-version="11.0.0"
+Service-Component: OSGI-INF/de.bxservice.csscustomization.model.BXS_ModelFactory.xml
+Automatic-Module-Name: de.bxservice.csscustomization
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.adempiere.plugin.utils.Incremental2PackActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-17
